@@ -1,16 +1,16 @@
 <?php
 
-namespace app\modules\news;
+namespace modules\shop;
 
 /**
- * news module definition class
+ * shop module definition class
  */
 class Module extends \yii\base\Module
 {
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'app\modules\news\controllers';
+    public $controllerNamespace = 'modules\shop\controllers';
 
     /**
      * @inheritdoc

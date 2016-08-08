@@ -13,12 +13,12 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'language' => 'ru',
     'modules' => [
-        'site' => [
-            'class' => 'app\modules\site\Module',
-        ],
-        'admin' => [
-            'class' => 'app\modules\admin\Module',
-        ]
+//        'site' => [
+//            'class' => 'app\modules\site\Module',
+//        ],
+//        'admin' => [
+//            'class' => 'app\modules\admin\Module',
+//        ]
     ],
     'components' => [
         'request' => [

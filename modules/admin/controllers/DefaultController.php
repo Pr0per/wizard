@@ -1,11 +1,11 @@
 <?php
 
-namespace app\modules\news\controllers;
+namespace modules\admin\controllers;
 
 use yii\web\Controller;
 
 /**
- * Default controller for the `news` module
+ * Default controller for the `admin` module
  */
 class DefaultController extends Controller
 {
