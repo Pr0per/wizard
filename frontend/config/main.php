@@ -13,12 +13,15 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'language' => 'ru',
     'modules' => [
-//        'site' => [
-//            'class' => 'app\modules\site\Module',
-//        ],
-//        'admin' => [
-//            'class' => 'app\modules\admin\Module',
-//        ]
+        'main' => [
+            'class' => 'modules\main\Module',
+        ],
+        'news' => [
+            'class' => 'modules\news\Module'
+        ],
+        'shop' => [
+            'class' => 'modules\shop\Module'
+        ],
     ],
     'components' => [
         'request' => [
@@ -43,7 +46,7 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'main/default/error',
         ],
 //        /*
         'urlManager' => [
