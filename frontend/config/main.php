@@ -10,9 +10,8 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'defaultRoute' => 'main/default/index',
- //   'controllerNamespace' => 'frontend\controllers',
+  //  'controllerNamespace' => 'frontend\controllers',
     'bootstrap' => ['log'],
-    'language' => 'ru',
     'layout' => 'w_main',
     'modules' => [
         'main' => [

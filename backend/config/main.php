@@ -12,7 +12,6 @@ return [
     'defaultRoute' => 'admin/default/index',
 //    'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'language' => 'ru',
     'layout' => 'w_main',
     'modules' => [
         'admin' => [
