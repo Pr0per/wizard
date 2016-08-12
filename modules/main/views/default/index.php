@@ -1,3 +1,11 @@
+<?php
+
+/* @var $this yii\web\View */
+
+use yii\helpers\Html;
+
+$this->title = 'Компания Wizard';
+?>
 <div class="main-default-index">
     <h1><?= $this->context->action->uniqueId ?></h1>
     <p>

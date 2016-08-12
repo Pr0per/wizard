@@ -1,3 +1,12 @@
+<?php
+
+/* @var $this yii\web\View */
+
+use yii\helpers\Html;
+
+$this->title = 'Каталог товаров';
+$this->params['breadcrumbs'][] = $this->title;
+?>
 <div class="shop-default-index">
     <h1><?= $this->context->action->uniqueId ?></h1>
     <p>
