@@ -27,4 +27,22 @@ class DefaultController extends Controller
     {
         return $this->render('index');
     }
+
+    /**
+     * Renders the about view for the module
+     * @return string
+     */
+    public function actionAbout()
+    {
+        return $this->render('about');
+    }
+
+    /**
+     * Renders the contact view for the module
+     * @return string
+     */
+    public function actionContact()
+    {
+        return $this->render('contact');
+    }
 }

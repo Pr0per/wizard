@@ -9,9 +9,11 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
+    'defaultRoute' => 'main/default/index',
+ //   'controllerNamespace' => 'frontend\controllers',
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'frontend\controllers',
     'language' => 'ru',
+    'layout' => 'w_main',
     'modules' => [
         'main' => [
             'class' => 'modules\main\Module',
@@ -48,14 +50,14 @@ return [
         'errorHandler' => [
             'errorAction' => 'main/default/error',
         ],
-//        /*
+        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-//        */
+       */
     ],
     'params' => $params,
 ];

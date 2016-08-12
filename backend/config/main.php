@@ -9,9 +9,16 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'backend\controllers',
+    'defaultRoute' => 'admin/default/index',
+//    'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'language' => 'ru',
+    'layout' => 'w_main',
+    'modules' => [
+        'admin' => [
+            'class' => 'modules\admin\Module'
+        ]
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
@@ -35,7 +42,7 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'admin/default/error',
         ],
 //        /*
         'urlManager' => [
